@@ -336,7 +336,7 @@ spec:
         - name: name
           value: validate-fbc
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-validate-fbc:0.1@sha256:30315380adf97fcea062c64c7f323b31ab553093cbd66f867cb03de23872d93a
+          value: quay.io/konflux-ci/tekton-catalog/task-validate-fbc:0.1@sha256:b6dc1948778552a53b863682f8d42dcdda8b25348b5a3b97efb2398ba17f290d
         - name: kind
           value: task
         resolver: bundles
@@ -345,6 +345,57 @@ spec:
         operator: in
         values:
         - "false"
+    - name: validate-fbc-all-valid
+      params:
+      - name: IMAGE_URL
+        value: quay.io/xdaile/opm_bug_copy
+      - name: IMAGE_DIGEST
+        value: sha256:1ecc4e021bf3637249f6442a6400284d8b7a2f69ee80ab385229ee18ddc34571
+      runAfter:
+      - build-image-index
+      taskRef:
+        params:
+        - name: name
+          value: validate-fbc
+        - name: bundle
+          value: quay.io/xdaile/task-validate-fbc:0.1-test@sha256:9c4e4677cf23afdb740aba00a18e8912e1f8ba8a6c418c9fdfd5cc9aac5b25f0
+        - name: kind
+          value: task
+        resolver: bundles
+    - name: validate-fbc-wrong-registry
+      params:
+      - name: IMAGE_URL
+        value: quay.io/xdaile/opm_bug_copy
+      - name: IMAGE_DIGEST
+        value: sha256:f33027cc2dabcc2ae43ee8ec965c195b0fcc5535c402604f68f1531fac35c59c
+      runAfter:
+      - build-image-index
+      taskRef:
+        params:
+        - name: name
+          value: validate-fbc
+        - name: bundle
+          value: quay.io/xdaile/task-validate-fbc:0.1-test@sha256:9c4e4677cf23afdb740aba00a18e8912e1f8ba8a6c418c9fdfd5cc9aac5b25f0
+        - name: kind
+          value: task
+        resolver: bundles
+    - name: validate-fbc-non-pinned-quay-tag
+      params:
+      - name: IMAGE_URL
+        value: quay.io/xdaile/opm_bug_copy
+      - name: IMAGE_DIGEST
+        value: sha256:dc1b527019034143fccd8b62c7bd352c05981dd71427e949b170a419a6e5cd80
+      runAfter:
+      - build-image-index
+      taskRef:
+        params:
+        - name: name
+          value: validate-fbc
+        - name: bundle
+          value: quay.io/xdaile/task-validate-fbc:0.1-test@sha256:9c4e4677cf23afdb740aba00a18e8912e1f8ba8a6c418c9fdfd5cc9aac5b25f0
+        - name: kind
+          value: task
+        resolver: bundles
     - name: fbc-target-index-pruning-check
       params:
       - name: IMAGE_URL
