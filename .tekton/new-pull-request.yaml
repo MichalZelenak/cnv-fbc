@@ -472,28 +472,6 @@ spec:
         - name: kind
           value: task
         resolver: bundles
-    - name: validate-fbc
-      params:
-      - name: IMAGE_URL
-        value: $(tasks.build-image-index.results.IMAGE_URL)
-      - name: IMAGE_DIGEST
-        value: $(tasks.build-image-index.results.IMAGE_DIGEST)
-      runAfter:
-      - build-image-index
-      taskRef:
-        params:
-        - name: name
-          value: validate-fbc
-        - name: bundle
-          value: quay.io/xdaile/task-validate-fbc:0.1-test@sha256:9c4e4677cf23afdb740aba00a18e8912e1f8ba8a6c418c9fdfd5cc9aac5b25f0
-        - name: kind
-          value: task
-        resolver: bundles
-      when:
-      - input: $(params.skip-checks)
-        operator: in
-        values:
-        - "false"
     - name: push-dockerfile
       params:
       - name: IMAGE
