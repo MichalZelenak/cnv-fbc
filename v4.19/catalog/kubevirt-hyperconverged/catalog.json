@@ -19135,7 +19135,6 @@
         }
     ]
 }
-
 {
     "schema": "olm.bundle",
     "name": "kubevirt-hyperconverged-operator.v4.19.0-demo-oci-9001",
@@ -19158,22 +19157,41 @@
                 "description": "Demo bundle used to exercise the validate-fbc OCI relatedImage mediatype check. Not a real release.",
                 "displayName": "Demo OCI Check Bundle",
                 "installModes": [
-                    {"supported": true, "type": "OwnNamespace"},
-                    {"supported": true, "type": "SingleNamespace"},
-                    {"supported": false, "type": "MultiNamespace"},
-                    {"supported": false, "type": "AllNamespaces"}
+                    {
+                        "supported": true,
+                        "type": "OwnNamespace"
+                    },
+                    {
+                        "supported": true,
+                        "type": "SingleNamespace"
+                    },
+                    {
+                        "supported": false,
+                        "type": "MultiNamespace"
+                    },
+                    {
+                        "supported": false,
+                        "type": "AllNamespaces"
+                    }
                 ],
                 "labels": {},
-                "maintainers": [{"email": "demo@example.com", "name": "Demo Team"}],
+                "maintainers": [
+                    {
+                        "email": "demo@example.com",
+                        "name": "Demo Team"
+                    }
+                ],
                 "maturity": "alpha",
-                "provider": {"name": "Demo"}
+                "provider": {
+                    "name": "Demo"
+                }
             }
         }
     ],
     "relatedImages": [
         {
-            "name": "demo-operand",
-            "image": "quay.io/xdaile/task-validate-fbc@"
+            "name": "demo-mediatype-under-test",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137"
         }
     ]
 }
@@ -19182,6 +19200,8 @@
     "name": "demo-oci-check",
     "package": "kubevirt-hyperconverged",
     "entries": [
-        {"name": "kubevirt-hyperconverged-operator.v4.19.0-demo-oci-9001"}
+        {
+            "name": "kubevirt-hyperconverged-operator.v4.19.0-demo-oci-9001"
+        }
     ]
 }

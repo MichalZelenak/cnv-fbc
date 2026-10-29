@@ -334,7 +334,7 @@ spec:
         - name: url
           value: https://github.com/MichalZelenak/konflux-operator-tasks
         - name: revision
-          value: 540a1b82d65dc6f2d3066b0172c69d3786c338ed
+          value: 1ee1817b099dfb1e6a3b09f36807031a38066df7
         - name: pathInRepo
           value: task/validate-fbc/0.3/validate-fbc.yaml
       when:
@@ -404,4 +404,3 @@ spec:
     secret:
       secretName: '{{ git_auth_secret }}'
 status: {}
-
