@@ -332,14 +332,14 @@ spec:
       runAfter:
       - build-image-index
       taskRef:
+        resolver: git
         params:
-        - name: name
-          value: validate-fbc
-        - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-validate-fbc:0.1@sha256:30315380adf97fcea062c64c7f323b31ab553093cbd66f867cb03de23872d93a
-        - name: kind
-          value: task
-        resolver: bundles
+        - name: url
+          value: https://github.com/MichalZelenak/konflux-operator-tasks
+        - name: revision
+          value: 540a1b82d65dc6f2d3066b0172c69d3786c338ed
+        - name: pathInRepo
+          value: task/validate-fbc/0.3/validate-fbc.yaml
       when:
       - input: $(params.skip-checks)
         operator: in
