@@ -8,7 +8,7 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "main" && ( "v4.19/***".pathChanged() || ".tekton/new-push.yaml".pathChanged()
+      == "main" && ( "v5.0/***".pathChanged() || ".tekton/new-push.yaml".pathChanged()
       )
   labels:
     appstudio.openshift.io/application: konflux-demo-cnv-fbc
@@ -30,7 +30,7 @@ spec:
   - name: dockerfile
     value: catalog.Dockerfile
   - name: path-context
-    value: v4.19
+    value: v5.0
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
@@ -326,6 +326,10 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: image-mirror-set-path
+        value: .tekton/images-mirror-set.yaml
+      - name: SOURCE_ARTIFACT
+        value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
@@ -334,7 +338,7 @@ spec:
         - name: url
           value: https://github.com/MichalZelenak/konflux-operator-tasks
         - name: revision
-          value: 540a1b82d65dc6f2d3066b0172c69d3786c338ed
+          value: fix_oci_check
         - name: pathInRepo
           value: task/validate-fbc/0.3/validate-fbc.yaml
       when:
@@ -404,4 +408,3 @@ spec:
     secret:
       secretName: '{{ git_auth_secret }}'
 status: {}
-
