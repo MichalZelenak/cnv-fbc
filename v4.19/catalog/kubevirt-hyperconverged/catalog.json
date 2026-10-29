@@ -19173,7 +19173,7 @@
     "relatedImages": [
         {
             "name": "demo-operand",
-            "image": "quay.io/xdaile/task-validate-fbc@"
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137"
         }
     ]
 }
