@@ -30,9 +30,9 @@ spec:
     value:
     - linux/x86_64
   - name: dockerfile
-    value: v4.19/catalog.Dockerfile
+    value: catalog.Dockerfile
   - name: path-context
-    value: .
+    value: v4.19
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
@@ -376,17 +376,21 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: image-mirror-set-path
+        value: .tekton/images-mirror-set.yaml
+      - name: SOURCE_ARTIFACT
+        value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
+        resolver: git
         params:
-        - name: name
-          value: validate-fbc
-        - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-validate-fbc:0.3@sha256:5ac2ab06fa8b7b7dfaa7a57cf68d3dd8de3fa9c7d6ebaef17626509c45f234a3
-        - name: kind
-          value: task
-        resolver: bundles
+        - name: url
+          value: https://github.com/MichalZelenak/konflux-operator-tasks
+        - name: revision
+          value: fix_oci_check
+        - name: pathInRepo
+          value: task/validate-fbc/0.3/validate-fbc.yaml
       when:
       - input: $(params.skip-checks)
         operator: in
