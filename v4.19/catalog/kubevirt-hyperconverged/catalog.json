@@ -19154,8 +19154,8 @@
                 "annotations": {},
                 "apiServiceDefinitions": {},
                 "crdDescriptions": {},
-                "description": "Demo bundle used to exercise validate-fbc relatedImage mirroring via ImageDigestMirrorSet. Not a real release.",
-                "displayName": "Demo Mirror Check Bundle",
+                "description": "Demo bundle: ImageDigestMirrorSet resolves an unreleased relatedImage whose mirrored content is OCI mediaType (expect FAIL on OCP < 4.21). Not a real release.",
+                "displayName": "Demo Mirror+OCI Check Bundle",
                 "installModes": [
                     {
                         "supported": true,
@@ -19191,7 +19191,7 @@
     "relatedImages": [
         {
             "name": "demo-mirror-under-test",
-            "image": "registry.redhat.io/demo-mediatype/unreleased-test@sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137"
+            "image": "registry.redhat.io/demo-mediatype/unreleased-test@sha256:085f95a312895051ce06145322abfeca984ffe7b26dc44cef5b81ee3a12690a7"
         }
     ]
 }
