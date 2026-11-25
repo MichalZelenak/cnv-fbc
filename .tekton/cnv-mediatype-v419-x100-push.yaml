@@ -338,7 +338,7 @@ spec:
         - name: url
           value: https://github.com/MichalZelenak/konflux-operator-tasks
         - name: revision
-          value: fix_oci_check
+          value: ac09cf2cef7ddeaff6a58664388b6160dc9fddf6
         - name: pathInRepo
           value: task/validate-fbc/0.3/validate-fbc.yaml
       when:
