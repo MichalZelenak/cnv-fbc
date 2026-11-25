@@ -19191,7 +19191,7 @@
     "relatedImages": [
         {
             "name": "demo-mediatype-under-test",
-            "image": "quay.io/xdaile/task-validate-fbc@sha256:085f95a312895051ce06145322abfeca984ffe7b26dc44cef5b81ee3a12690a7"
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137"
         }
     ]
 }
