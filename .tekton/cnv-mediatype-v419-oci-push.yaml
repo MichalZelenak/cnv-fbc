@@ -8,13 +8,13 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "main" && ( "v4.19/***".pathChanged() || ".tekton/new-push.yaml".pathChanged()
+      == "main" && ( "v4.19/***".pathChanged() || ".tekton/cnv-mediatype-v419-oci-push.yaml".pathChanged()
       )
   labels:
     appstudio.openshift.io/application: konflux-demo-cnv-fbc
-    appstudio.openshift.io/component: new
+    appstudio.openshift.io/component: cnv-mediatype-v419-oci
     pipelines.appstudio.openshift.io/type: build
-  name: new-on-push
+  name: cnv-mediatype-v419-oci-on-push
   namespace: mzelenak-tenant
 spec:
   params:
@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/mzelenak-tenant/new:{{revision}}
+    value: quay.io/redhat-user-workloads/mzelenak-tenant/cnv-mediatype-v419-oci:{{revision}}
   - name: build-platforms
     value:
     - linux/x86_64
@@ -402,7 +402,7 @@ spec:
     - name: netrc
       optional: true
   taskRunTemplate:
-    serviceAccountName: build-pipeline-new
+    serviceAccountName: build-pipeline-cnv-mediatype-v419-oci
   workspaces:
   - name: git-auth
     secret:
