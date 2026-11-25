@@ -341,9 +341,9 @@ spec:
         - name: url
           value: https://github.com/MichalZelenak/konflux-operator-tasks
         - name: revision
-          value: ac09cf2cef7ddeaff6a58664388b6160dc9fddf6
+          value: 2fc409875392c4c4002dbb0c44ab453bb64f3a11
         - name: pathInRepo
-          value: task/validate-fbc/0.3/validate-fbc.yaml
+          value: task/validate-fbc/0.4/validate-fbc.yaml
       when:
       - input: $(params.skip-checks)
         operator: in
