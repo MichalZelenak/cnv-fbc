@@ -19192,6 +19192,406 @@
         {
             "name": "demo-mediatype-under-test",
             "image": "quay.io/xdaile/task-validate-fbc@sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137"
+        },
+        {
+            "name": "demo-unreachable-000",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+            "name": "demo-unreachable-001",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+            "name": "demo-unreachable-002",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000002"
+        },
+        {
+            "name": "demo-unreachable-003",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000003"
+        },
+        {
+            "name": "demo-unreachable-004",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000004"
+        },
+        {
+            "name": "demo-unreachable-005",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000005"
+        },
+        {
+            "name": "demo-unreachable-006",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000006"
+        },
+        {
+            "name": "demo-unreachable-007",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000007"
+        },
+        {
+            "name": "demo-unreachable-008",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000008"
+        },
+        {
+            "name": "demo-unreachable-009",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000009"
+        },
+        {
+            "name": "demo-unreachable-010",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000a"
+        },
+        {
+            "name": "demo-unreachable-011",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000b"
+        },
+        {
+            "name": "demo-unreachable-012",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000c"
+        },
+        {
+            "name": "demo-unreachable-013",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000d"
+        },
+        {
+            "name": "demo-unreachable-014",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000e"
+        },
+        {
+            "name": "demo-unreachable-015",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000000f"
+        },
+        {
+            "name": "demo-unreachable-016",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000010"
+        },
+        {
+            "name": "demo-unreachable-017",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000011"
+        },
+        {
+            "name": "demo-unreachable-018",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000012"
+        },
+        {
+            "name": "demo-unreachable-019",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000013"
+        },
+        {
+            "name": "demo-unreachable-020",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000014"
+        },
+        {
+            "name": "demo-unreachable-021",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000015"
+        },
+        {
+            "name": "demo-unreachable-022",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000016"
+        },
+        {
+            "name": "demo-unreachable-023",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000017"
+        },
+        {
+            "name": "demo-unreachable-024",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000018"
+        },
+        {
+            "name": "demo-unreachable-025",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000019"
+        },
+        {
+            "name": "demo-unreachable-026",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001a"
+        },
+        {
+            "name": "demo-unreachable-027",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001b"
+        },
+        {
+            "name": "demo-unreachable-028",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001c"
+        },
+        {
+            "name": "demo-unreachable-029",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001d"
+        },
+        {
+            "name": "demo-unreachable-030",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001e"
+        },
+        {
+            "name": "demo-unreachable-031",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000001f"
+        },
+        {
+            "name": "demo-unreachable-032",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000020"
+        },
+        {
+            "name": "demo-unreachable-033",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000021"
+        },
+        {
+            "name": "demo-unreachable-034",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000022"
+        },
+        {
+            "name": "demo-unreachable-035",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000023"
+        },
+        {
+            "name": "demo-unreachable-036",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000024"
+        },
+        {
+            "name": "demo-unreachable-037",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000025"
+        },
+        {
+            "name": "demo-unreachable-038",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000026"
+        },
+        {
+            "name": "demo-unreachable-039",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000027"
+        },
+        {
+            "name": "demo-unreachable-040",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000028"
+        },
+        {
+            "name": "demo-unreachable-041",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000029"
+        },
+        {
+            "name": "demo-unreachable-042",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002a"
+        },
+        {
+            "name": "demo-unreachable-043",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002b"
+        },
+        {
+            "name": "demo-unreachable-044",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002c"
+        },
+        {
+            "name": "demo-unreachable-045",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002d"
+        },
+        {
+            "name": "demo-unreachable-046",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002e"
+        },
+        {
+            "name": "demo-unreachable-047",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000002f"
+        },
+        {
+            "name": "demo-unreachable-048",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000030"
+        },
+        {
+            "name": "demo-unreachable-049",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000031"
+        },
+        {
+            "name": "demo-unreachable-050",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000032"
+        },
+        {
+            "name": "demo-unreachable-051",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000033"
+        },
+        {
+            "name": "demo-unreachable-052",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000034"
+        },
+        {
+            "name": "demo-unreachable-053",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000035"
+        },
+        {
+            "name": "demo-unreachable-054",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000036"
+        },
+        {
+            "name": "demo-unreachable-055",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000037"
+        },
+        {
+            "name": "demo-unreachable-056",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000038"
+        },
+        {
+            "name": "demo-unreachable-057",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000039"
+        },
+        {
+            "name": "demo-unreachable-058",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003a"
+        },
+        {
+            "name": "demo-unreachable-059",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003b"
+        },
+        {
+            "name": "demo-unreachable-060",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003c"
+        },
+        {
+            "name": "demo-unreachable-061",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003d"
+        },
+        {
+            "name": "demo-unreachable-062",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003e"
+        },
+        {
+            "name": "demo-unreachable-063",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000003f"
+        },
+        {
+            "name": "demo-unreachable-064",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000040"
+        },
+        {
+            "name": "demo-unreachable-065",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000041"
+        },
+        {
+            "name": "demo-unreachable-066",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000042"
+        },
+        {
+            "name": "demo-unreachable-067",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000043"
+        },
+        {
+            "name": "demo-unreachable-068",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000044"
+        },
+        {
+            "name": "demo-unreachable-069",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000045"
+        },
+        {
+            "name": "demo-unreachable-070",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000046"
+        },
+        {
+            "name": "demo-unreachable-071",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000047"
+        },
+        {
+            "name": "demo-unreachable-072",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000048"
+        },
+        {
+            "name": "demo-unreachable-073",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000049"
+        },
+        {
+            "name": "demo-unreachable-074",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004a"
+        },
+        {
+            "name": "demo-unreachable-075",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004b"
+        },
+        {
+            "name": "demo-unreachable-076",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004c"
+        },
+        {
+            "name": "demo-unreachable-077",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004d"
+        },
+        {
+            "name": "demo-unreachable-078",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004e"
+        },
+        {
+            "name": "demo-unreachable-079",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000004f"
+        },
+        {
+            "name": "demo-unreachable-080",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000050"
+        },
+        {
+            "name": "demo-unreachable-081",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000051"
+        },
+        {
+            "name": "demo-unreachable-082",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000052"
+        },
+        {
+            "name": "demo-unreachable-083",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000053"
+        },
+        {
+            "name": "demo-unreachable-084",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000054"
+        },
+        {
+            "name": "demo-unreachable-085",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000055"
+        },
+        {
+            "name": "demo-unreachable-086",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000056"
+        },
+        {
+            "name": "demo-unreachable-087",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000057"
+        },
+        {
+            "name": "demo-unreachable-088",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000058"
+        },
+        {
+            "name": "demo-unreachable-089",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000059"
+        },
+        {
+            "name": "demo-unreachable-090",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005a"
+        },
+        {
+            "name": "demo-unreachable-091",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005b"
+        },
+        {
+            "name": "demo-unreachable-092",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005c"
+        },
+        {
+            "name": "demo-unreachable-093",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005d"
+        },
+        {
+            "name": "demo-unreachable-094",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005e"
+        },
+        {
+            "name": "demo-unreachable-095",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:000000000000000000000000000000000000000000000000000000000000005f"
+        },
+        {
+            "name": "demo-unreachable-096",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000060"
+        },
+        {
+            "name": "demo-unreachable-097",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000061"
+        },
+        {
+            "name": "demo-unreachable-098",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000062"
+        },
+        {
+            "name": "demo-unreachable-099",
+            "image": "quay.io/xdaile/task-validate-fbc@sha256:0000000000000000000000000000000000000000000000000000000000000063"
         }
     ]
 }
@@ -19205,4 +19605,3 @@
         }
     ]
 }
-
