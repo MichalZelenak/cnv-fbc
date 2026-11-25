@@ -1,0 +1,18 @@
+# Related-image digests for validate-fbc mediaType demos
+# image: quay.io/xdaile/task-validate-fbc@<digest>
+# Catalog references registry.redhat.io/demo-mediatype/unreleased-test@<digest>
+# which IDMS mirrors to quay.io/xdaile/task-validate-fbc (see images-mirror-set.yaml).
+
+# FAIL wrong mediaType (OCP < 4.21) — CURRENT in v4.19 demo (mirror + OCI)
+oci:    sha256:085f95a312895051ce06145322abfeca984ffe7b26dc44cef5b81ee3a12690a7
+
+# PASS docker v2 (mirror + docker) — previous demo_oci case
+docker: sha256:88ffbce0190f22b06f767af931e12789353d0fd52a4ce61ff8ed235d06a49137
+
+# FAIL broken/unavailable (manifest unknown)
+unreachable: sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+# SKIP check: build path-context v4.21+ / v5.0 (same docker digest is fine)
+
+# 100 unreachable: generate with
+# python3 -c "print('\n'.join(f'sha256:{i:064x}' for i in range(100)))"
