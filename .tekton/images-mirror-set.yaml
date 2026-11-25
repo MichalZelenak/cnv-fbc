@@ -6,6 +6,9 @@ metadata:
 spec:
   imageDigestMirrors:
   - mirrors:
+    - quay.io/xdaile/task-validate-fbc
+    source: registry.redhat.io/demo-mediatype/unreleased-test
+  - mirrors:
     - brew.registry.redhat.io
     source: registry.redhat.io
   - mirrors:
